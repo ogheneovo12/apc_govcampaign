@@ -1,5 +1,6 @@
 import { Box, Container, Heading } from "@chakra-ui/react";
 import Gallery from "../components/Gallery/Gallery";
+import PageHeader from "../components/PageHeader";
 import MainLayouts from "../layouts/MainLayouts";
 
 function GalleryPage(props) {

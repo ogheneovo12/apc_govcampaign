@@ -5,7 +5,13 @@ const theme = extendTheme({
     heading: "Inter",
     body: "Inter",
   },
-  
+  components: {
+    Heading: {
+      baseStyle: {
+        color: "#042552",
+      },
+    },
+  },
 });
 
 export default theme;

@@ -5,10 +5,18 @@ import MainLayouts from "../layouts/MainLayouts";
 
 function GalleryPage(props) {
   return (
-    <Box>
-         <PageHeader title={"Gallery Page"} />
+    <Box
+      backgroundRepeat={"no-repeat"}
+      backgroundPosition={"right top, right center, left center"}
+      backgroundImage={
+        "url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"
+      }
+    >
+      <PageHeader title={"Gallery Page"} />
       <Container py="120px" maxW={"container.xl"}>
-        <Heading mb={"20px"} textAlign={"center"}>Gallery Section</Heading>
+        <Heading mb={"20px"} textAlign={"center"}>
+          Gallery Section
+        </Heading>
         <Gallery
           data={[
             {

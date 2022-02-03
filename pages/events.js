@@ -5,11 +5,17 @@ import MainLayouts from "../layouts/MainLayouts";
 
 function Events(props) {
   return (
-    <Box>
+    <Box
+      backgroundRepeat={"no-repeat"}
+      backgroundPosition={"right top, right center, left center"}
+      backgroundImage={
+        "url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"
+      }
+    >
       <PageHeader title={"Event Page"} />
       <Container py={"30px"} maxW={"container.xl"}>
         <Heading textAlign={"center"}>Featured Campaign</Heading>
-        <Text mx="auto" maxW={"838px"} textAlign={"center"}>
+        <Text color="#363333" mt={"26px"} mx="auto" maxW={"838px"} textAlign={"center"}>
           Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet
           pulvinar ante tempor. Etiam lacus eros, viverra tempus, commodo
           fringilla nulla.

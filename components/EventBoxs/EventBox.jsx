@@ -9,6 +9,7 @@ function EventBox(props) {
       maxW={"323px"}
       width={"100%"}
       p={"20px"}
+      backgroundColor={"#fff"}
     >
       <Image src="/flier.png" />
       <Heading  color={"#042552"} mt={"14px"} fontSize={"20px"}>

@@ -14,7 +14,13 @@ import MainLayouts from "../layouts/MainLayouts";
 
 function ContactUs(props) {
   return (
-    <Box>
+    <Box
+      backgroundRepeat={"no-repeat"}
+      backgroundPosition={"right top, right center, left center"}
+      backgroundImage={
+        "url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"
+      }
+    >
       <PageHeader title={"Contact Me"} />
       <Container py="120px" maxW={"container.xl"}>
         <Box
@@ -42,8 +48,6 @@ function ContactUs(props) {
             this heading
           </Text>
           <Box mt={"120px"}>
-            
-
             <FormControl mt={"10px"}>
               <Input
                 _placeholder={{
@@ -80,7 +84,12 @@ function ContactUs(props) {
                 height={"48px"}
               />
             </FormControl>
-            <Textarea rows={10} size="lg" mt={"54px"} placeholder="Message..."></Textarea>
+            <Textarea
+              rows={10}
+              size="lg"
+              mt={"54px"}
+              placeholder="Message..."
+            ></Textarea>
             <Flex mt={"30px"} justifyContent={"center"}>
               <Button
                 color="#fff"

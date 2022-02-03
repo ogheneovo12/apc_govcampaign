@@ -142,6 +142,16 @@ export default function Home() {
           <Flex flexDirection={["column", "column", "column", "row"]}>
             <Box w={["100%", "100%", "100%", "50%"]}>
               <Image src="/contestant.png" />
+
+              <Text
+                mt="5px"
+                color={"#FD86BF"}
+                fontFamily={"Pinyon Script;"}
+                fontSize={"35px"}
+                textAlign={"center"}
+              >
+                Hon. Dayo Akanmode
+              </Text>
             </Box>
             <Flex
               flexDirection={"column"}
@@ -185,10 +195,15 @@ export default function Home() {
           </Flex>
         </Container>
       </Box>
-      <Box py={"120px"}>
+      <Box
+        backgroundRepeat={"no-repeat"}
+        backgroundPosition={"right center, left center"}
+        backgroundImage={"url(/shape_dot.png),url(/shape_l.png)"}
+        py={"120px"}
+      >
         <Container maxW={"container.xl"}>
           <Heading textAlign={"center"}>We Bring Hope to Kogi State</Heading>
-          <Text mb={"100px"} textAlign={"center"}>
+          <Text color={"#696871"} mb={"100px"} textAlign={"center"}>
             Body content goes here for this heading body content goes here for
             this heading
           </Text>
@@ -435,18 +450,24 @@ export default function Home() {
           than any website.
         </Text>
       </Box>
-      <Box py={"120px"}>
+      <Box
+        backgroundRepeat={"no-repeat"}
+        backgroundPosition={"left center"}
+        backgroundImage={"url(shape_full.png)"}
+        py={"120px"}
+      >
         <Container maxW={"container.xl"}>
           <Heading textAlign={"center"}>Our Strategic Planning </Heading>
-          <Text mb={"20px"} textAlign="center">
+          <Text color="#696871" mb={"120px"} textAlign="center">
             Body content goes here for this heading body content goes here for
             this heading
           </Text>
           <Flex
             flexDirection={["column", "column", "column", "row"]}
             mt={"20px"}
+            justifyContent={"space-between"}
           >
-            <Box w={["100%", "100%", "100%", "50%"]} padding={"30px"}>
+            <Box w={["100%", "100%", "100%", "50%"]} px={"30px"}>
               <Image borderRadius={"20px"} src="/beautiful-cities-full.png" />
             </Box>
             <Box w={["100%", "100%", "100%", "50%"]}>
@@ -478,7 +499,7 @@ export default function Home() {
       <Box backgroundColor={"#FAFBFC"} py={"120px"}>
         <Container maxW={"container.xl"}>
           <Heading textAlign={"center"}>Featured Campaign</Heading>
-          <Text mx={"auto"} maxW={"838px"} textAlign={"center"}>
+          <Text color="#363333" mx={"auto"} maxW={"838px"} textAlign={"center"}>
             Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis
             aliquet pulvinar ante tempor. Etiam lacus eros, viverra tempus,
             commodo fringilla nulla.
@@ -504,7 +525,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box py={"120px"}>
+      <Box backgroundRepeat={"no-repeat"} backgroundPosition={"right top, right bottom, left bottom"} backgroundImage={"url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"} py={"120px"}>
         <Container maxW={"container.xl"}>
           <Heading textAlign={"center"} fontSize={"32px"} mb={"20px"}>
             Gallery Section
@@ -556,16 +577,25 @@ export default function Home() {
           <Flex
             minHeight={"385px"}
             alignItems={"center"}
-            justifyContent={"space-between"}
+            justifyContent={{ base: "space-evenly", md: "space-between" }}
+            flexDirection={["column", "column", "row"]}
           >
             <Box maxW={"450px"}>
-              <Heading textAlign={"center"} fontSize={"28px"} color={"#fff"}>
+              <Heading
+                textAlign={"center"}
+                fontSize={["18px", "18px", "28px"]}
+                color={"#fff"}
+              >
                 <CheckCircleIcon color="#01D2A1" mr="5" /> Vote for HON. DAYO
                 AKANMODE
               </Heading>
             </Box>
             <Box maxW={"450px"}>
-              <Heading textAlign={"center"} fontSize={"28px"} color={"#fff"}>
+              <Heading
+                textAlign={"center"}
+                fontSize={["18px", "18px", "28px"]}
+                color={"#fff"}
+              >
                 {" "}
                 AS GOVERNOR OF KOGI STATE{" "}
               </Heading>

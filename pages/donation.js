@@ -19,12 +19,16 @@ import MainLayouts from "../layouts/MainLayouts";
 
 function Donation(props) {
   return (
-    <Box>
-        <PageHeader title={"Donation Page"} />
-      <Container  py="120px" maxW={"container.xl"}>
-        
-        <Box 
-        
+    <Box
+      backgroundRepeat={"no-repeat"}
+      backgroundPosition={"right top, right center, left center"}
+      backgroundImage={
+        "url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"
+      }
+    >
+      <PageHeader title={"Donation Page"} />
+      <Container py="120px" maxW={"container.xl"}>
+        <Box
           boxShadow={"0px 4px 100px rgba(0, 0, 0, 0.06);"}
           borderRadius={"15px"}
           mx="auto"

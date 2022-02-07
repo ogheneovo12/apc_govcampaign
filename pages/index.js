@@ -95,7 +95,7 @@ export default function Home() {
         <Container
           boxShadow={"0px 0px 100px rgba(0, 0, 0, 0.1)"}
           backgroundColor={"#fff"}
-          mt={"-140px"}
+          mt={{ base: "-25px", md: "-140px" }}
           Container
           maxW={"container.lg"}
           width={"90%"}
@@ -525,7 +525,14 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box backgroundRepeat={"no-repeat"} backgroundPosition={"right top, right bottom, left bottom"} backgroundImage={"url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"} py={"120px"}>
+      <Box
+        backgroundRepeat={"no-repeat"}
+        backgroundPosition={"right top, right bottom, left bottom"}
+        backgroundImage={
+          "url(/dots.png),url(half_circ_r.png), url(/half_circ_l.png)"
+        }
+        py={"120px"}
+      >
         <Container maxW={"container.xl"}>
           <Heading textAlign={"center"} fontSize={"32px"} mb={"20px"}>
             Gallery Section

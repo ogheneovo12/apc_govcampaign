@@ -197,11 +197,14 @@ const MobileNav = () => {
     <Stack
       bg={useColorModeValue("white", "gray.800")}
       p={4}
+      top="69px"
       display={{ lg: "none" }}
       position={"absolute"}
       width={"100%"}
       left={0}
       right={0}
+      zIndex={9999}
+      borderBottom={"1px solid rgba(0,0,0,0.3)"}
     >
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
